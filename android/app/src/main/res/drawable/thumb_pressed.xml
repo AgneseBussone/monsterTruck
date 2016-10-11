@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <corners android:radius="@dimen/speed_thumb_radius"/>
+    <size android:height="@dimen/speed_thumb_h"
+        android:width="@dimen/speed_thumb_w"/>
+    <gradient
+        android:type="radial"
+        android:gradientRadius="20"
+        android:startColor="@color/thumb_pressed_start"
+        android:endColor="@color/thumb_pressed_end">
+    </gradient>
+</shape>

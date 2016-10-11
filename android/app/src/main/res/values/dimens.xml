@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Generic icon dimension -->
+    <dimen name="icon_dimension">80dp</dimen>
+
+    <dimen name="move_btn_dimension">100dp</dimen>
+
+    <dimen name="speed_progress_radius">10dp</dimen>
+    <dimen name="speed_progress_h">50dp</dimen>
+    <dimen name="speed_progress_w">250dp</dimen>
+    <dimen name="speed_thumb_radius">10dp</dimen>
+    <dimen name="speed_thumb_h">50dp</dimen>
+    <dimen name="speed_thumb_w">25dp</dimen>
+
+
+    <!-- Seekbar dimension as should appear -->
+    <dimen name="speed_w">50dp</dimen>
+    <dimen name="speed_h">300dp</dimen>
+
+    <dimen name="light_h">40dp</dimen>
+</resources>

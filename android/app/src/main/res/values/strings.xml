@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MTC</string>
+    <string name="stop_engine">ENGINE STOP</string>
+    <string name="move_forw">Forward</string>
+    <string name="move_back">Backward</string>
+    <string name="speed">Speed</string>
+    <string name="light_on">Light ON</string>
+    <string name="light_off">Light OFF</string>
+    <string name="wifi_perm_label">Wifi permission request</string>
+    <string name="wifi_perm_descr">Allows the application to scan the available wifi networks and connect to the car.</string>
+    <string name="wifi_perm_denied">Wifi permission denied</string>
+</resources>

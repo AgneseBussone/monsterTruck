@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ececec</color>
+    <color name="colorPrimaryDark">#5b5b5b</color>
+    <color name="colorAccent">#44f14a</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="stop1">#ff4e4e</color>
+    <color name="stop2">#ff0000</color>
+    <color name="stop3">#610000</color>
+
+    <color name="light_blue">#2db6ff</color>
+    <color name="strong_blue">#018fda</color>
+
+    <color name="speed_end">#005b02</color>
+    <color name="speed_start">#be0a00</color>
+
+    <color name="thumb_pressed_start">#ff0000</color>
+    <color name="thumb_pressed_end">#56ff0000</color>
+
+    <color name="light_off">#383838</color>
+    <color name="light_on">#fff7aa</color>
+</resources>
