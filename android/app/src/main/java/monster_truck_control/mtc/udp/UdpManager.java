@@ -22,6 +22,7 @@ public class UdpManager {
     public static final short LIGHTS = 2;
     public static final short PRNDL = 3;
     public static final short DIRECTION = 4;
+    private static final short SHUTDOWN = 5;
 
     // command value
     public static final char ACC_BRK_PRESS = 'P';
@@ -115,18 +116,7 @@ public class UdpManager {
         // Remove all messages
         udpHandler.removeCallbacksAndMessages(null);
 
-        // TODO: Create a message with shutdown information
-        String data = "quit";
-
-        Message msg = Message.obtain();
-        msg.obj = data;
-        // Send the message to the handler
-        if(udpHandler != null){
-            udpHandler.sendMessage(msg);
-        }
-        else{
-            Log.e(LOG_TAG, "udpHandler not exists");
-        }
+        sendMessage(SHUTDOWN, ' ');
 
         udpHandler.getLooper().quitSafely();
         udpHandler = null;
