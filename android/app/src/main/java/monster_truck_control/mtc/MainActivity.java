@@ -73,15 +73,6 @@ public class MainActivity extends AppCompatActivity {
             wifiSetup(true);
         }
 
-        /* Make system bar invisible */
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                                      | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                                      | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                                      | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                                      | View.SYSTEM_UI_FLAG_FULLSCREEN
-                                      | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-
         /* Set the background image */
         InputStream resource = getResources().openRawResource(R.raw.background);
         RelativeLayout base = (RelativeLayout)findViewById(R.id.baseLayout);
@@ -113,6 +104,15 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         motionManager.registerMotion(sensorManager);
         registerReceiver(main_receiver, main_filter);
+
+        /* Make system bar invisible */
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
     }
 
     @Override
