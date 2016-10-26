@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="monster_truck_control.mtc">
 
+<!-- Support for installation on external SDcard
+    android:installLocation="preferExternal">
+
+    <uses-sdk android:minSdkVersion="7"
+        android:targetSdkVersion="23"/>
+-->
     <uses-feature android:name="android.hardware.wifi" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -9,11 +15,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <!--<permission android:name="mtc.monster_truck_control.WIFI_SETUP"-->
-        <!--android:protectionLevel="dangerous"-->
-        <!--android:permissionGroup="android.permission-group.LOCATION"-->
-        <!--android:label="@string/wifi_perm_label"-->
-        <!--android:description="@string/wifi_perm_descr"/>-->
 
     <application
         android:allowBackup="true"
@@ -21,7 +22,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
