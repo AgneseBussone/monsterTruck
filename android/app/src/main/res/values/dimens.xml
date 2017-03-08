@@ -19,6 +19,7 @@
     <!-- Seekbar dimension as should appear -->
     <dimen name="speed_w">50dp</dimen>
     <dimen name="speed_h">300dp</dimen>
+    <dimen name="navi_height">50dp</dimen>
 
     <dimen name="light_h">40dp</dimen>
 </resources>

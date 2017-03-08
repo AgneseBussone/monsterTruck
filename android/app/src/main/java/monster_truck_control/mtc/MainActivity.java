@@ -12,17 +12,19 @@ import android.graphics.BitmapFactory;
 import android.hardware.SensorManager;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
 import java.io.InputStream;
+
 import monster_truck_control.mtc.graphics.BackgroundDrawable;
 import monster_truck_control.mtc.graphics.SpeedChangeListener;
 import monster_truck_control.mtc.sensor.MotionManager;
@@ -104,15 +106,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         motionManager.registerMotion(sensorManager);
         registerReceiver(main_receiver, main_filter);
-
-        /* Make system bar invisible */
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
     }
 
     @Override

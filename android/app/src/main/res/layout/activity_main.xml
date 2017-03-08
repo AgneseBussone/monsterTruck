@@ -97,27 +97,28 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/linearLayout2">
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/navi_height"
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/speed"
-            android:id="@+id/textView"
-            android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
+            android:text="@string/speed"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <FrameLayout
+            android:id="@+id/frameLayout2"
             android:layout_width="@dimen/speed_w"
             android:layout_height="fill_parent"
-            android:id="@+id/frameLayout2"
             android:layout_gravity="center_horizontal">
 
             <!-- Width and height of the seekbar are before rotation -->
@@ -126,13 +127,13 @@
                 android:id="@+id/speed"
                 android:layout_width="@dimen/speed_h"
                 android:layout_height="@dimen/speed_w"
-                android:rotation="270"
-                android:progressDrawable="@drawable/progress_bar"
-                android:progress="10"
-                android:max="100"
-                android:thumb="@drawable/thumb"
+                android:layout_gravity="center"
                 android:indeterminate="false"
-                android:layout_gravity="center" />
+                android:max="100"
+                android:progress="10"
+                android:progressDrawable="@drawable/progress_bar"
+                android:rotation="270"
+                android:thumb="@drawable/thumb" />
         </FrameLayout>
 
     </LinearLayout>
